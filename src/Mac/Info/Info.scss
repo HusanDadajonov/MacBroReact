@@ -1,0 +1,144 @@
+.box{
+    &__title {
+        font-size: 48px;
+        color: #1d1d1d;
+        font-weight: 600;
+        line-height: 1.2;
+        margin: 0 0 10px
+    }
+    
+    &__desc {
+        font-size: 32px;
+        color: #555;
+        font-weight: 600;
+        line-height: 1.2;
+        margin: 0 0 10px 0;
+    }
+    &__color {
+        margin-left: 10px;
+    }
+    
+    &__btns {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    &__btns div{
+        display: flex;
+        align-items: center;
+    }
+    
+
+    &__btn-color-text{
+        pointer-events: none;
+    }
+
+    &__btns-title {
+        font-size: 16px;
+        line-height: 1.5;
+        font-weight: 700;
+        margin: 30px 0 10px;
+    }
+    
+    &__gb-btn {
+        width: 180px;
+        height: 55px;
+        cursor: pointer;
+        display: flex;
+        border-radius: 12px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #a39e9e;
+        padding: 10px 12px;
+        -webkit-transition: .3s;
+        transition: .3s;
+        background: transparent;
+        outline: 0;
+
+        &:not(:last-child){
+            margin-right: 10px;
+        }
+    }
+
+    &__btns--img-active,
+    &__btns--storage-active,
+    &__btns--color-active{
+        border-color:#162bee ;
+        box-shadow: 0 0 1px 1px #162bee;
+    }
+
+    &__btns--color{
+        padding-top: 50px;
+        padding-bottom: 20px;
+        position: relative;
+
+        &:nth-child(1) span {
+            background: #d29d00;
+        }
+
+        &:nth-child(2) span {
+            background: silver; 
+        }
+
+        &:nth-child(3) span {
+            background: gray; 
+        }
+    }
+
+    &__btns--color *{
+        pointer-events: none;
+    }
+    
+    &__btn-color {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        position:absolute;
+        top: 10px;
+    }    
+    
+    &__count-block {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 200px;
+        border: 1px solid #555;
+        border-radius: 4px;
+        margin-top: 50px;
+        margin-bottom: 30px;
+	}
+
+	&__count-minus {
+        width: 100%;
+        background: none;
+        border: none;
+        border-right: 2px solid #555;
+        font-size: 40px;
+        cursor: pointer;
+	}
+
+	&__count {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        background: none;
+        font-size: 30px;
+	}
+
+
+    &__sum-count{
+        margin-right: 10px;
+    }
+
+	&__count-plus {
+        width: 100%;
+        background: none;
+        border: none;
+        border-left: 2px solid #555;
+        font-size: 40px;
+        cursor: pointer;
+	}
+}
